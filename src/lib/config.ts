@@ -9,7 +9,7 @@ const projectId = "c6c9bacd35afa3eb9e6cccf6d8464395";
 const supportedChains: Chain[] = [ mainnet, base ];
 
 export const config = getDefaultConfig({
-   appName: "WalletConnection",
+   appName: "Pioneer-Frontend",
    projectId,
    chains: supportedChains as any,
    ssr: true,
