@@ -37,7 +37,7 @@ const CustomConnectButton = ({ className }: CustomConnectButtonProps) => {
                     onClick={openConnectModal}
                     type="button"
                   >
-                    {theme.strings.connectWallet || "Connect Wallet"}
+                    {"Connect Wallet"}
                   </button>
                 );
               }
@@ -49,7 +49,7 @@ const CustomConnectButton = ({ className }: CustomConnectButtonProps) => {
                     onClick={openChainModal}
                     type="button"
                   >
-                    {theme.strings.wrongNetwork || "Wrong network"}
+                    {"Wrong network"}
                   </button>
                 );
               }

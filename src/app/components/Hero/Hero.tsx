@@ -7,7 +7,7 @@ import { SettleAuction } from "./SettleAuction";
 import { PlaceBid } from "./PlaceBid";
 import { HighestBidder } from "./HighestBidder";
 import { Fragment, useState } from "react";
-import { useTheme } from "@/hooks/useTheme";
+// import { useTheme } from "@/hooks/useTheme";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/20/solid";
 import { AuctionInfo } from "@/services/nouns-builder/auction";
 import { ContractInfo } from "@/services/nouns-builder/token";
@@ -190,14 +190,14 @@ const CurrentAuction = ({
   contractInfo?: ContractInfo;
   tokenId: string;
 }) => {
-  const [theme] = useTheme();
+  // const [theme] = useTheme();
 
   return (
     <Fragment>
       <div className="grid grid-cols-2 gap-12 mt-10 lg:w-96">
         <div className="border-r border-skin-stroke">
           <div className="text-lg text-skin-muted">
-            {theme.strings.currentBid || "Current Bid"}
+            {"Current Bid"}
           </div>
           {auctionInfo && (
             <div className="text-2xl font-semibold sm:text-3xl text-skin-base mt-2">
@@ -207,7 +207,7 @@ const CurrentAuction = ({
         </div>
         <div className="lg:w-64">
           <div className="text-lg text-skin-muted">
-            {theme.strings.auctionEndsIn || "Auction ends in"}
+            {"Auction ends in"}
           </div>
           {auctionInfo && (
             <div className="text-2xl font-semibold sm:text-3xl text-skin-base mt-2">
