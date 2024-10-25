@@ -1,5 +1,6 @@
 "use client";
-
+import Header from "./components/Header";
+import Hero from "./components/Hero/Hero";
 import Image from "next/image";
 import { ConnectBtn } from "./components/connectButton";
 import Profile from "./components/profile";
@@ -7,6 +8,12 @@ import Profile from "./components/profile";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <div className="bg-skin-fill w-full flex items-center justify-around pb-8 lg:pb-0">
+            <div className="max-w-[1400px]">
+                <Header />
+                <Hero />
+            </div>
+        </div>
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <ConnectBtn />
       </div>
