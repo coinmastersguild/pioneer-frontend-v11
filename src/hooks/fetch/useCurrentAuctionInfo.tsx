@@ -1,3 +1,4 @@
+"use client"
 import { AuctionInfo } from "data/nouns-builder/auction";
 import useSWR from "swr";
 
